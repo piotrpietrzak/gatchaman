@@ -1,13 +1,19 @@
 apply plugin: 'groovy'
 
 repositories {
-    mavenLocal()
+    mavenCentral()
     jcenter()
 
 }
 
 ext {
     spring_version = '4.1.4.RELEASE'
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.3.10"
+
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.3"
 }
 
 sourceSets.main.java.srcDirs = []
