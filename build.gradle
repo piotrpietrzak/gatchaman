@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenLocal()
+    jcenter()
+
+}
+
+ext {
+    spring_version = '4.1.4.RELEASE'
+}
+
+sourceSets.main.java.srcDirs = []
+sourceSets.main.groovy.srcDirs += ["src/main/java"]
+
+compileJava {
+    sourceCompatibility = '1.7'
+    targetCompatibility = '1.7'
+    options.encoding = 'UTF-8'
+    options.compilerArgs = ['-XDignore.symbol.file']
+}
