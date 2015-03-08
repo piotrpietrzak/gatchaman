@@ -12,4 +12,7 @@ See more on my blog:
 Clone repo:
 ```git clone https://github.com/piotrpietrzak/gatchaman.git```
 
-*```git checkout origin/groovy/multiple_overloaded_operator_methods```
+* Overloaded operator
+```git checkout origin/groovy/multiple_overloaded_operator_methods```
+* Closure to scan for free port during tests
+```git checkout origin/groovy/closure_port_scanner```
