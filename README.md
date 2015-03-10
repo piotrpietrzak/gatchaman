@@ -7,7 +7,7 @@ It was my first connotation with Groovy tools like:
 This project is mainly to setup small development projects with tests to learn G* technologies. 
 
 See more on my blog: 
-[http://piotr-pietrzak.blogspot.com](http://pietrzak.me)
+[http://pietrzak.me](http://pietrzak.me)
 
 Clone repo:
 ```git clone https://github.com/piotrpietrzak/gatchaman.git```
