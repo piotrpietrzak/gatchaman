@@ -18,7 +18,7 @@ class DefiniteIntegral {
             x += step
             sum += function(x) * step
         }
-        this.upperLimit = x * 2
+        this.upperLimit = x
     }
 
 }

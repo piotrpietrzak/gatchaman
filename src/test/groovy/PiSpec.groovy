@@ -6,7 +6,7 @@ class PiSpec extends Specification {
         expect:
         DefiniteIntegral integral = new DefiniteIntegral(scale, sumToLimit);
         integral.compute({ Math.sin(it) });
-        integral.upperLimit == expectedResult
+        integral.upperLimit * 2 == expectedResult
 
         where:
         scale | sumToLimit | expectedResult
