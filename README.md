@@ -1,9 +1,9 @@
 #Pi and square root of two
 This way of counting Pi and sqrt(2) is not best, but main reason to write this code was to practice groovy closures and spock API.
 ##How this works:
-⋅⋅⋅We try to find best approximation of point p that has only one simple property - integral from 0 to point p is equal 1.
+We try to find best approximation of point p that has only one simple property - integral from 0 to point p is equal 1.
 ###Lets do this with two functions:
-####sin(x)
+#### sin(x)
 ```y=sin(x)```
 in this case p = pi/2
 ####x
