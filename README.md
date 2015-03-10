@@ -16,3 +16,5 @@ Clone repo:
 ```git checkout origin/groovy/multiple_overloaded_operator_methods```
 * Closure to scan for free port during tests
 ```git checkout origin/groovy/closure_port_scanner```
+* Closure to integrate sinus function to compute approximation of Pi
+```git checkout origin/groovypi```
