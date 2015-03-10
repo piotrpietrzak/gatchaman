@@ -1,10 +1,12 @@
-#Gatchaman
-Science Ninja Team Gatchaman from classic Battle of the planets in '70s polish version was called Team-G. 
-It was my first connotation with Groovy tools like:
-* Groovy itself
-* Gradle
-* Spock
-This project is mainly to setup small development projects with tests to learn G* technologies. 
+#Pi and square root of two
+This way of counting Pi and sqrt(2) is not best, but main reason to write this code was to practice groovy closures and spock API.
+How this works:
+We try to find best approximation of point p that has only one simple property - integral from 0 to point p is equal 1.
+Lets do this with two functions:
+y=sin(x)
+in this case p = pi/2
+y=x
+in this case p = sqrt(2)
 
 See more on my blog: 
 [http://piotr-pietrzak.blogspot.com](http://piotr-pietrzak.blogspot.com)
@@ -12,4 +14,4 @@ See more on my blog:
 Clone repo:
 ```git clone https://github.com/piotrpietrzak/gatchaman.git```
 
-*```git checkout origin/groovy/multiple_overloaded_operator_methods```
+```git checkout origin/groovypi```
