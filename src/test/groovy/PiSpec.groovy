@@ -4,9 +4,8 @@ import spock.lang.Specification
 class PiSpec extends Specification {
     def "should converge to pi"(scale, sumToLimit, expectedResult) {
         expect:
-        DefiniteIntegral integral = new DefiniteIntegral(scale, sumToLimit);
-        integral.compute({ Math.sin(it) });
-        integral.upperLimit * 2 == expectedResult
+        new DefiniteIntegral()
+                .compute(scale, sumToLimit, { Math.sin(it) }) * 2 == expectedResult
 
         where:
         scale | sumToLimit | expectedResult
