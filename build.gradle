@@ -1,9 +1,20 @@
 apply plugin: 'groovy'
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.blogspot.toomuchcoding:gradle-test-profiler:0.2.1'
+    }
+}
+
+apply plugin: 'com.blogspot.toomuchcoding.testprofiler'
+
+
 repositories {
     mavenLocal()
     jcenter()
-
 }
 
 ext {
@@ -20,8 +31,8 @@ sourceSets.main.java.srcDirs = []
 sourceSets.main.groovy.srcDirs += ["src/main/java"]
 
 compileJava {
-    sourceCompatibility = '1.7'
-    targetCompatibility = '1.7'
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
     options.encoding = 'UTF-8'
     options.compilerArgs = ['-XDignore.symbol.file']
 }

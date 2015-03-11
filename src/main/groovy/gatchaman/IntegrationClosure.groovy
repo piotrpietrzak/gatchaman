@@ -13,5 +13,4 @@ class IntegrationClosure {
             }
             x
     }
-
 }
