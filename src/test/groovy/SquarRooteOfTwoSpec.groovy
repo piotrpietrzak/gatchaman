@@ -1,11 +1,10 @@
-import gatchaman.DefiniteIntegral
+import gatchaman.IntegrationClosure
 import spock.lang.Specification
 
 class SquarRooteOfTwoSpec extends Specification {
     def "should converge to square root of two"(scale, sumToLimit, expectedResult) {
         expect:
-        new DefiniteIntegral()
-                .compute(scale, sumToLimit , { it }) == expectedResult
+        new IntegrationClosure().compute(scale, sumToLimit , { it }) == expectedResult
 
         where:
         scale | sumToLimit | expectedResult
