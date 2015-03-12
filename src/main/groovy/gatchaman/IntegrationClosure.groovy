@@ -1,7 +1,7 @@
 package gatchaman
 
 class IntegrationClosure {
-    final Closure<BigInteger> compute = {
+    static final Closure<BigInteger> integrate = {
         Integer scale, BigDecimal integrateTo, Closure<BigDecimal> function ->
             BigDecimal sum = 0;
             BigDecimal x = 0;

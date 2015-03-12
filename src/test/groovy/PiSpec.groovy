@@ -1,11 +1,13 @@
-import gatchaman.IntegrationClosure
 import spock.lang.Specification
+
+import static gatchaman.IntegrationClosure.*
 
 class PiSpec extends Specification {
 
     def "should converge to pi"(scale, sumToLimit, expectedResult) {
         expect:
-        new IntegrationClosure().compute(scale, sumToLimit) { Math.sin(it) } * 2 == expectedResult
+        Closure<BigDecimal> functionToIntegrate = { Math.sin(it) }
+        integrate(scale, sumToLimit, functionToIntegrate)  * 2 == expectedResult
 
         where:
         scale | sumToLimit | expectedResult
