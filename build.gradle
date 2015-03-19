@@ -1,11 +1,14 @@
 apply plugin: 'groovy'
+apply plugin: 'project-report'
+apply plugin: 'build-dashboard'
 
 buildscript {
     repositories {
+        mavenLocal()
         jcenter()
     }
     dependencies {
-        classpath 'com.blogspot.toomuchcoding:gradle-test-profiler:0.2.1'
+        classpath 'com.blogspot.toomuchcoding:gradle-test-profiler:0.2.3-SNAPSHOT'
     }
 }
 
@@ -35,4 +38,11 @@ compileJava {
     targetCompatibility = '1.8'
     options.encoding = 'UTF-8'
     options.compilerArgs = ['-XDignore.symbol.file']
+}
+
+test {
+    reports {
+        junitXml.enabled = false
+        html.enabled = true
+    }
 }
