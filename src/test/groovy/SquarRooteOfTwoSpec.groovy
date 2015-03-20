@@ -16,5 +16,7 @@ class SquarRooteOfTwoSpec extends Specification {
         4     | 1          | 1.4142
         5     | 1          | 1.41421
         6     | 1          | 1.414214
+        7     | 1          | 1.4142136
+        8     | 1          | 1.41421356
     }
 }
